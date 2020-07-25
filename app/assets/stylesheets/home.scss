@@ -1,0 +1,649 @@
+
+
+@media screen and (max-width: 550px) {
+
+header {
+    position: fixed;
+    top:0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    z-index: 20;
+}
+
+.body{
+  height:100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+
+.現在地{
+  position: fixed;
+  top: 375px;
+  right:5px;
+  background-color:rgba(0,0,0,0);
+  z-index: 10;
+
+}
+
+/////🟢🟢🟢🟢🟢🟢アイコンウィンドウ/🟢🟢🟢🟢🟢🟢🟢//////////////////////////////////
+
+
+
+.content{
+  height:550px;
+  width: 230px;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+
+
+
+
+
+}
+
+.shopname1{
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  top:10px;
+
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  width: 230px;
+    z-index: 202;
+
+
+
+}
+
+.contentheader1{
+  text-align:center;
+  z-index: 201
+
+}
+
+.gazocontent  {
+  text-align:center;
+  width:230px;
+  position: relative;
+  top:70px;
+  z-index: 200;
+}
+
+
+.gazo{
+  height:150px;
+  width: 150px;
+
+}
+
+.contenbody{
+  z-index: 100;
+}
+
+
+
+.ch{
+  text-align:center
+}
+
+.ch1{
+  height: 100px;
+  width:100px;
+}
+
+.category-box{
+  position: relative;
+  top:50px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.sentence p{
+  color: black;
+  font-size: 12px;
+  position: relative;
+  top:60px;
+  text-align:center;
+font-family: sans-serif;
+margin-left:20px;
+margin-right:20px;
+
+}
+
+.form{
+  position: relative;
+  top:65px;
+  left:55px;
+  text-align:center;
+}
+
+.form p{
+
+  color:rgba(204,51,153,1);
+  font-size: 12px;
+  text-align:left;
+  margin: 0.8em 0px;
+  font-family:sans-serif;
+}
+
+
+.form a:link, a:visited, a:hover, a:active {
+  color: black;
+
+}
+
+
+
+
+
+.mgr1{
+    margin-right : 40px;
+}
+
+.mgr2{
+    margin-right : 45px;
+}
+
+
+.btn{
+  text-align:center
+}
+
+
+.btn-square-pop {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+
+.btn-square-pop:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider {
+width: 180px;
+padding-top: 180px; /* 画像の高さ */
+position: relative;
+top:50px;
+margin: 1em auto;
+text-align: center;
+}
+.cp_cssslider > img {
+width: 180px;
+height: 180px;
+text-align: center;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider input[name='cp_switch'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider label {
+margin: 10px 10px 0 2px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider label:hover {
+opacity: 0.9;
+}
+.cp_cssslider label img {
+display: block;
+width: 20px;
+border-radius: 2px;
+}
+.cp_cssslider input[name='cp_switch']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider input[name='cp_switch'] ~ img {
+opacity: 0;
+}
+.cp_cssslider input[name='cp_switch']:checked + label + img {
+opacity: 1;
+}
+
+
+
+/////🟢🟢🟢🟢🟢🟢🟢🟢メニューウィンドウ/🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢//////////////////////////////////
+.menu-btn {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.menu-btn span {
+    color: white;
+}
+
+.menu-btn span:after {
+    content: attr(data-txt-menu);
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu-btn span:after {
+    content: attr(data-txt-close);
+}
+
+
+.menu {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.65);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 40;
+}
+
+.menu ul {
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+}
+
+.menu li {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: #999;
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu {
+    cursor: url(../images/cross.svg),auto;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (min-width: 501px)and(max-width: 2024px) {
+
+   header {
+       position: fixed;
+       top:0px;
+       right: 0px;
+       left: 0px;
+       width: 100%;
+       height: 70px;
+       background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+       z-index: 20;
+   }
+
+   .body{
+     height:100%;
+     width: 100%;
+     position: fixed;
+     top: 0px;
+     z-index: 1;
+   }
+
+
+   .現在地{
+     position: absolute;
+     top: 555px;
+     right:5px;
+     background-color:rgba(0,0,0,0);
+     z-index: 10;
+
+   }
+
+   /////🟢🟢🟢🟢🟢🟢アイコンウィンドウ/🟢🟢🟢🟢🟢🟢🟢//////////////////////////////////
+
+   .content{
+     height:750px;
+     width: 350px;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+
+
+   }
+
+
+
+   .shopname1{
+     font-size: 30px;
+     position: fixed;
+     text-align:center;
+     top:10px;
+       background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+     width: 350px;
+     z-index: 202;
+
+
+
+   }
+
+   .contentheader1{
+     text-align:center;
+     z-index: 201
+
+   }
+
+   .ch{
+     text-align:center
+   }
+
+   .ch1{
+     height: 150px;
+     width:150px;
+   }
+
+   .category-box{
+     position: relative;
+     top:50px;
+     display: grid;
+     gap: 10px;
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+
+
+
+   .sentence{
+     position: relative;
+     top:80px;
+     text-align:left;
+     margin-left:20px;
+     margin-right:20px;
+
+   }
+
+.sentence p{
+  color: black;
+  font-size:15px;
+}
+
+   .form{
+     position: relative;
+     top:120px;
+     text-align:center;
+   }
+
+   .form p{
+     color: black;
+     margin: 0.3em 0px;
+     font-size:15px;
+   }
+
+
+   .form a:link, a:visited, a:hover, a:active {
+     color: black;
+
+   }
+
+
+
+
+
+
+   .mgr1{
+       margin-right : 50px;
+   }
+
+   .mgr2{
+       margin-right : 60px;
+   }
+
+
+   .btn{
+     text-align:center
+   }
+
+
+   .btn-square-pop {
+     position: relative;
+     top:15px;
+     display: inline-block;
+     padding: 0.25em 0.5em;
+     text-decoration: none;
+     color: #FFF;
+     background: #fd9535;/*背景色*/
+     border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+     border-radius: 4px;/*角の丸み*/
+     box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+     font-weight: bold;
+   }
+
+   .btn-square-pop:active {
+     border-bottom: solid 2px #fd9535;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+   }
+
+
+
+
+
+   *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   }
+
+   .cp_cssslider {
+   width: 300px;
+   padding-top: 300px; /* 画像の高さ */
+   position: relative;
+   top:40px;
+   margin: 1em auto;
+   text-align: center;
+   }
+
+
+   .cp_cssslider > img {
+   width: 300px;
+   height: 300px;
+   text-align: center;
+   position: absolute;
+   left: 0;
+   top: 0;
+   transition: all 0.5s;
+   border-radius: 3px;
+   box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+   }
+   .cp_cssslider input[name='cp_switch'] {
+   display: none;
+   }
+
+
+   /* サムネイル */
+   .cp_cssslider label {
+   margin: 15px 10px 0 5px;
+   border: 2px solid #ffffff;
+   display: inline-block;
+   cursor: pointer;
+   transition: all 0.5s ease;
+   opacity: 0.6;
+   border-radius: 3px;
+   }
+
+   .cp_cssslider label:hover {
+   opacity: 0.9;
+   }
+   .cp_cssslider label img {
+   display: block;
+   width: 35px;
+   border-radius: 2px;
+   }
+   .cp_cssslider input[name='cp_switch']:checked + label {
+   border: 2px solid #FF00FF;
+   opacity: 1;
+   }
+   .cp_cssslider input[name='cp_switch'] ~ img {
+   opacity: 0;
+   }
+   .cp_cssslider input[name='cp_switch']:checked + label + img {
+   opacity: 1;
+   }
+
+
+
+   /////🟢🟢🟢🟢🟢🟢🟢🟢メニューウィンドウ/🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢//////////////////////////////////
+   .menu-btn {
+       position: fixed;
+       top: 18px;
+       right: 20px;
+       width: 100px;
+       height: 50px;
+       line-height: 50px;
+       font-size: 20px;
+       text-align: center;
+       cursor: pointer;
+       z-index: 30;
+   }
+
+   .menu-btn span {
+       color: white;
+   }
+
+   .menu-btn span:after {
+       content: attr(data-txt-menu);
+   }
+
+   /* 開閉用ボタンがクリックされた時のスタイル */
+   .open .menu-btn span:after {
+       content: attr(data-txt-close);
+   }
+
+
+   .menu {
+       position: fixed;
+       display: table;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0,0,0,.8);
+       -webkit-transition: all .5s;
+       transition: all .5s;
+       visibility: hidden;
+       opacity: 0;
+       z-index: 40;
+   }
+
+   .menu ul {
+       display: table-cell;
+       vertical-align: middle;
+       list-style: none;
+   }
+
+   .menu li {
+       width: 300px;
+       height: 80px;
+       line-height: 80px;
+       margin: 0 auto;
+       text-align: center;
+   }
+
+   .menu li a {
+       display: block;
+       font-size: 18px;
+       color: #fff;
+   }
+
+   .menu li a:hover {
+       color: #999;
+   }
+
+   /* 開閉用ボタンがクリックされた時のスタイル */
+   .open .menu {
+       cursor: url(../images/cross.svg),auto;
+       -webkit-transition: all .5s;
+       transition: all .5s;
+       visibility: visible;
+       opacity: 1;
+   }
+
+
+
+
+
+
+   }

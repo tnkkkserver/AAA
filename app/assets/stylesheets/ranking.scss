@@ -1,0 +1,1348 @@
+
+
+
+@media screen and (max-width: 550px) {
+
+.rankingbody{
+  background-color:black;
+  width: 135%;
+  height: 2505px;
+}
+
+
+
+.rankingtitle{
+  position: absolute;
+  top:72px;
+background-image: url("/ranking.jpg");
+background-color:rgba(255,51,153,0.9);
+background-blend-mode:lighten;
+
+ width: 128%;
+ height: 285px;
+ text-align:center;
+
+}
+
+
+.rankingtitle p1{
+  font-size: 30px;
+  color:Yellow;
+  text-align:center;
+  position: relative;
+  top:55px;
+  margin: 0.2em 0px;
+  z-index: 12;
+
+}
+
+
+.rankingbody{
+margin:0 auto;
+}
+
+
+
+
+
+.rankingcontent1{
+  position: relative;
+  top:350px;
+  margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  width: 100%;
+  height: 380px;
+
+
+}
+
+.rankingcontent2{
+  position: relative;
+  top:-218px;
+  margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  width: 100%;
+  height: 380px;
+
+
+}
+.rankingcontent3{
+  position: relative;
+  top:-217px;
+  margin:0 auto;
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  width: 100%;
+  height: 380px;
+
+
+}
+
+.rankingcontent4{
+  position: relative;
+    top:-216px;
+    margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  width: 100%;
+  height: 380px;
+
+
+}
+
+.rankingcontent5{
+  position: relative;
+    top:-215px;
+    margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  width: 100%;
+  height: 380px;
+
+
+}
+
+
+
+.rank{
+  height: 80px;
+  width: 40px;
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
+
+.rankphoto{
+  height:280px;
+  width: 380px;
+  position: absolute;
+  top:20px;
+  left: 90px;
+}
+
+
+
+.rankingbody p{
+text-align: left;
+font-size: 12px;
+position: relative;
+top:-255px;
+left:285px;
+color: black;
+width:170px;
+
+
+
+}
+
+.form2{
+  position: relative;
+  top:20px;
+}
+
+
+.form2 p{
+
+  color:black;
+  font-size: 12px;
+  text-align:left;
+
+  margin: 0.3em 0px;
+  font-family:sans-serif;
+}
+
+
+.form2 a:link, a:visited, a:hover, a:active {
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider1 {
+width: 185px;
+padding-top: 185px; /* 画像の高さ */
+position: relative;
+top:40px;
+left:50px;
+
+text-align: center;
+}
+
+.cp_cssslider1 > img {
+width: 185px;
+height: 185px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider1 input[name='cp_switch1'] {
+display: none;
+}
+
+
+
+
+
+/* サムネイル */
+.cp_cssslider1 label {
+margin: 15px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider1 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider1 label img {
+display: block;
+width: 25px;
+border-radius: 2px;
+}
+.cp_cssslider1 input[name='cp_switch1']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider1 input[name='cp_switch1'] ~ img {
+opacity: 0;
+}
+.cp_cssslider1 input[name='cp_switch1']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider2 {
+  width: 185px;
+  padding-top: 185px; /* 画像の高さ */
+  position: relative;
+  top:40px;
+  left:50px;
+
+  text-align: center;
+}
+
+.cp_cssslider2 > img {
+width: 185px;
+height: 185px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider2 input[name='cp_switch2'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider2 label {
+margin: 15px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider2 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider2 label img {
+display: block;
+width: 25px;
+border-radius: 2px;
+}
+.cp_cssslider2 input[name='cp_switch2']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider2 input[name='cp_switch2'] ~ img {
+opacity: 0;
+}
+.cp_cssslider2 input[name='cp_switch2']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider3 {
+  width: 185px;
+  padding-top: 185px; /* 画像の高さ */
+  position: relative;
+  top:40px;
+  left:50px;
+
+  text-align: center;
+}
+
+.cp_cssslider3 > img {
+width: 185px;
+height: 185px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider3 input[name='cp_switch3'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider3 label {
+margin: 15px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider3 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider3 label img {
+display: block;
+width: 25px;
+border-radius: 2px;
+}
+.cp_cssslider3 input[name='cp_switch3']:checked + label {
+border: 2px solid  #FF00FF;
+opacity: 1;
+}
+.cp_cssslider3 input[name='cp_switch3'] ~ img {
+opacity: 0;
+}
+.cp_cssslider3 input[name='cp_switch3']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider4 {
+  width: 185px;
+  padding-top: 185px; /* 画像の高さ */
+  position: relative;
+  top:40px;
+  left:50px;
+
+  text-align: center;
+}
+
+.cp_cssslider4 > img {
+width: 185px;
+height: 185px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider4 input[name='cp_switch4'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider4 label {
+margin: 15px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider4 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider4 label img {
+display: block;
+width: 25px;
+border-radius: 2px;
+}
+.cp_cssslider4 input[name='cp_switch4']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider4 input[name='cp_switch4'] ~ img {
+opacity: 0;
+}
+.cp_cssslider4 input[name='cp_switch4']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider5 {
+  width: 185px;
+  padding-top: 185px; /* 画像の高さ */
+  position: relative;
+  top:40px;
+  left:50px;
+
+  text-align: center;
+}
+
+.cp_cssslider5 > img {
+width: 185px;
+height: 185px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider5 input[name='cp_switch5'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider5 label {
+margin: 15px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider5 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider5 label img {
+display: block;
+width:  25px;
+border-radius: 2px;
+}
+.cp_cssslider5 input[name='cp_switch5']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider5 input[name='cp_switch5'] ~ img {
+opacity: 0;
+}
+.cp_cssslider5 input[name='cp_switch5']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.btn1{
+  text-align:right;
+
+}
+
+
+.btn-square-pop1 {
+  font-size: 10px;
+  position: relative;
+  top:-200px;
+  right:80px;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  z-index: 2;
+}
+
+.btn-square-pop1:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+
+.btn-square-pop2 {
+  font-size: 10px;
+  position: relative;
+  top:-190px;
+  right:80px;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  z-index: 2;
+}
+
+.btn-square-pop2:active {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+
+.btn-circle-flat {
+  position: fixed;
+  top:580px;
+  left: 360px;
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+  z-index: 1001;
+}
+
+.btn-circle-flat:hover {
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+
+
+
+/////🟢🟢🟢🟢🟢🟢🟢🟢メニューウィンドウ/🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢//////////////////////////////////
+.menu-btn1 {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.menu-btn1 span {
+    color: white;
+}
+
+.menu-btn1 span:after {
+    content: attr(data-txt-menu);
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu-btn1 span:after {
+    content: attr(data-txt-close);
+}
+
+
+.menu1 {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 135%;
+    height: 150%;
+    background: rgba(0,0,0,.65);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 40;
+}
+
+.menu1 ul {
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+}
+
+.menu1 li {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu1 li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu1 li a:hover {
+    color: #999;
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu1 {
+    cursor: url(../images/cross.svg),auto;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+@media screen and (min-width: 501px)and(max-width: 2024px) {
+
+.rankingbody{
+ background-color:black;
+ width: 100%;
+ height: 3450px;
+}
+
+
+
+.rankingtitle{
+ position: absolute;
+ top:72px;
+ background-image: url("/ranking.jpg");
+ background-color:rgba(255,51,153,0.9);
+ background-blend-mode:lighten;
+width: 100%;
+height: 450px;
+text-align:center;
+
+}
+
+
+.rankingtitle p1{
+ font-size: 50px;
+ color:Yellow;
+ text-align:center;
+ position: relative;
+ top:100px;
+ margin: 0.2em 0px;
+ z-index: 12;
+}
+
+
+
+
+
+
+
+
+.rankingbody{
+margin:0 auto;
+}
+
+.rankingcontent1{
+ position: relative;
+ top:518px;
+ margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+ width: 70%;
+ height: 520px;
+
+
+}
+
+.rankingcontent2{
+ position: relative;
+ top:-255px;
+ margin:0 auto;
+ background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+ width: 100%;
+ height:520px;
+
+
+}
+.rankingcontent3{
+ position: relative;
+ top:-253px;
+ margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+ width: 100%;
+ height: 520px;
+
+
+}
+
+.rankingcontent4{
+ position: relative;
+   top:-251px;
+   margin:0 auto;
+background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+ width: 100%;
+ height: 520px;
+
+
+}
+
+.rankingcontent5{
+ position: relative;
+   top:-249px;
+   margin:0 auto;
+ background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+ width: 100%;
+ height: 520px;
+
+
+}
+
+
+
+.rank{
+ height: 130px;
+ width: 70px;
+ position: absolute;
+ top:10px;
+ left: 10px;
+}
+
+.rankphoto{
+ height:280px;
+ width: 380px;
+ position: absolute;
+ top:20px;
+ left: 90px;
+}
+
+
+
+.rankingbody p{
+text-align: left;
+font-size: 15px;
+position: relative;
+top:-405px;
+left:485px;
+color: black;
+width:370px;
+
+
+
+}
+
+.form2{
+  position: relative;
+  top:60px;
+}
+
+
+.form2 p{
+
+  color:black;
+  font-size: 15px;
+  text-align:left;
+
+  margin: 0.3em 0px;
+  font-family:sans-serif;
+}
+
+
+.form2 a:link, a:visited, a:hover, a:active {
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider1 {
+width: 310px;
+padding-top: 310px; /* 画像の高さ */
+position: relative;
+top:30px;
+left:110px;
+
+text-align: center;
+}
+
+.cp_cssslider1 > img {
+width: 310px;
+height: 310px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider1 input[name='cp_switch1'] {
+display: none;
+}
+
+
+
+
+
+/* サムネイル */
+.cp_cssslider1 label {
+margin: 30px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider1 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider1 label img {
+display: block;
+width: 30px;
+border-radius: 2px;
+}
+.cp_cssslider1 input[name='cp_switch1']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider1 input[name='cp_switch1'] ~ img {
+opacity: 0;
+}
+.cp_cssslider1 input[name='cp_switch1']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider2 {
+width: 310px;
+padding-top: 310px; /* 画像の高さ */
+position: relative;
+top:30px;
+left:110px;
+
+text-align: center;
+}
+
+.cp_cssslider2 > img {
+width: 310px;
+height: 310px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider2 input[name='cp_switch2'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider2 label {
+margin: 30px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider2 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider2 label img {
+display: block;
+width: 30px;
+border-radius: 2px;
+}
+.cp_cssslider2 input[name='cp_switch2']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider2 input[name='cp_switch2'] ~ img {
+opacity: 0;
+}
+.cp_cssslider2 input[name='cp_switch2']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider3 {
+width: 310px;
+padding-top: 310px; /* 画像の高さ */
+position: relative;
+top:30px;
+left:110px;
+
+text-align: center;
+}
+
+.cp_cssslider3 > img {
+width: 310px;
+height: 310px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider3 input[name='cp_switch3'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider3 label {
+margin: 30px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider3 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider3 label img {
+display: block;
+width: 30px;
+border-radius: 2px;
+}
+.cp_cssslider3 input[name='cp_switch3']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider3 input[name='cp_switch3'] ~ img {
+opacity: 0;
+}
+.cp_cssslider3 input[name='cp_switch3']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider4 {
+width: 310px;
+padding-top: 310px; /* 画像の高さ */
+position: relative;
+top:30px;
+left:110px;
+
+text-align: center;
+}
+
+.cp_cssslider4 > img {
+width: 310px;
+height: 310px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider4 input[name='cp_switch4'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider4 label {
+margin: 30px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider4 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider4 label img {
+display: block;
+width: 30px;
+border-radius: 2px;
+}
+.cp_cssslider4 input[name='cp_switch4']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider4 input[name='cp_switch4'] ~ img {
+opacity: 0;
+}
+.cp_cssslider4 input[name='cp_switch4']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.cp_cssslider5 {
+width: 310px;
+padding-top: 310px; /* 画像の高さ */
+position: relative;
+top:30px;
+left:110px;
+
+text-align: center;
+}
+
+.cp_cssslider5 > img {
+width: 310px;
+height: 310px;
+text-align: right;
+position: absolute;
+left: 0;
+top: 0;
+transition: all 0.5s;
+border-radius: 3px;
+box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+.cp_cssslider5 input[name='cp_switch5'] {
+display: none;
+}
+
+
+/* サムネイル */
+.cp_cssslider5 label {
+margin: 30px 5px 0 5px;
+border: 2px solid #ffffff;
+display: inline-block;
+cursor: pointer;
+transition: all 0.5s ease;
+opacity: 0.6;
+border-radius: 3px;
+}
+
+.cp_cssslider5 label:hover {
+opacity: 0.9;
+}
+.cp_cssslider5 label img {
+display: block;
+width: 30px;
+border-radius: 2px;
+}
+.cp_cssslider5 input[name='cp_switch5']:checked + label {
+border: 2px solid #FF00FF;
+opacity: 1;
+}
+.cp_cssslider5 input[name='cp_switch5'] ~ img {
+opacity: 0;
+}
+.cp_cssslider5 input[name='cp_switch5']:checked + label + img {
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.btn1{
+ text-align:right;
+
+}
+
+
+.btn-square-pop1 {
+ font-size: 10px;
+ position: relative;
+ top:-230px;
+ right:220px;
+ display: inline-block;
+ padding: 0.25em 0.5em;
+ text-decoration: none;
+ color: #FFF;
+ background: #fd9535;/*背景色*/
+ border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+ border-radius: 4px;/*角の丸み*/
+ box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+ font-weight: bold;
+ z-index: 2;
+}
+
+.btn-square-pop1:active {
+ border-bottom: solid 2px #fd9535;
+ box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+
+.btn-square-pop2 {
+ font-size: 10px;
+ position: relative;
+ top:-225px;
+ right:230px;
+ display: inline-block;
+ padding: 0.25em 0.5em;
+ text-decoration: none;
+ color: #FFF;
+ background: #fd9535;/*背景色*/
+ border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+ border-radius: 4px;/*角の丸み*/
+ box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+ font-weight: bold;
+ z-index: 2;
+}
+
+.btn-square-pop2:active {
+ border-bottom: solid 2px #fd9535;
+ box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+
+
+
+
+.btn-circle-flat {
+  position: fixed;
+  top:570px;
+  right:30px;
+  font-size: 20px;
+
+  display: inline-block;
+  text-decoration: none;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  color: #FFF;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.btn-circle-flat:hover {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+
+
+
+/////🟢🟢🟢🟢🟢🟢🟢🟢メニューウィンドウ/🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢//////////////////////////////////
+.menu-btn1 {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.menu-btn1 span {
+    color: white;
+}
+
+.menu-btn1 span:after {
+    content: attr(data-txt-menu);
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu-btn1 span:after {
+    content: attr(data-txt-close);
+}
+
+
+.menu1 {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.65);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 40;
+}
+
+.menu1 ul {
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+}
+
+.menu1 li {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu1 li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu1 li a:hover {
+    color: #999;
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu1 {
+    cursor: url(../images/cross.svg),auto;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+}

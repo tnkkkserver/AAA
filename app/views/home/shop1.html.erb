@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="shop1.css">
+
+  </head>
+
+  <body>
+    <header>
+
+
+    </header>
+
+   <div class="shop1body">
+
+     <div class="shop1title">
+
+       <p1>Luxuryaaaaaaaa</p1>
+
+     </div>
+
+
+
+     <div class="shop1content">
+
+
+
+         <div class="cp_cssslider0">
+           <input type="radio" name="cp_switch6" id="photo21" checked/>
+             <label for="photo21"><img src="/アイコン青.png" ></label>
+             <img src="/アイコン青.png">
+           <input type="radio" name="cp_switch6" id="photo22"/>
+             <label for="photo22"><img src="/アイコン赤.png" ></label>
+             <img src="/アイコン赤.png">
+           <input type="radio" name="cp_switch6" id="photo23"/>
+             <label for="photo23"><img src="/アイコン緑.png" ></label>
+             <img src="/アイコン緑.png">
+           <input type="radio" name="cp_switch6" id="photo24"/>
+             <label for="photo24"><img src="/現在地.png"></label>
+             <img src="/現在地.png">
+         </div>
+
+
+
+
+         <p>こんにちはこんにちはこんにちはこんにちは</p>
+         <p>こんにちはこんにちはこんにちはこんにちは</p>
+         <p>こんにちはこんにちはこんにちはこんにちは</p>
+         <p>こんにちはこんにちはこんにちはこんにちは</p>
+
+
+         <div class="btn2">
+           <a href="#" class="btn-square-pop3">MOREMOREMORE</a>
+         </div>
+
+         <div class="btn2">
+           <a href="http://localhost:3000/top" class="btn-square-pop4">MAPに戻る(PC)</a>
+         </div>
+
+         <div class="btn2">
+           <a href="http://192.168.100.101:3000/top" class="btn-square-pop5">MAPに戻る(スマホ)</a>
+         </div>
+
+
+
+     </div>
+
+
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 🟢🟢🟢🟢🟢🟢モーダルウィンドウ🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢　-->
+
+     <!-- メインコンテンツ-->
+     <div class="wrapper">
+         <!-- ここはコンテンツ -->
+     </div>
+
+     <!-- 開閉用ボタン -->
+     <div class="menu-btn" id="js__btn">
+         <span data-txt-menu="MENU" data-txt-close="CLOSE"></span>
+     </div>
+
+     <!-- モーダルメニュー -->
+     <nav class="menu" id="js__nav">
+         <ul>
+           <li><a href="http://localhost:3000/top">MAP</a></li>
+           <li><a href="http://localhost:3000/ranking">ランキング</a></li>
+           <li><a href="http://192.168.100.101:3000/top">MAP</a></li>
+           <li><a href="http://192.168.100.101:3000/ranking">ランキンング</a></li>
+
+
+         </ul>
+     </nav>
+
+
+
+
+
+    <!-- 🟡🟡🟡🟡🟡🟡🟡🟡モーダルウィンドウ🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡　-->
+
+
+
+
+    <!--jQuery本体-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--自分で作るjQueryプログラム-->
+    <script>
+     $(function () {
+         var $body = $('body');
+
+         //開閉用ボタンをクリックでクラスの切替え
+         $('#js__btn').on('click', function () {
+             $body.toggleClass('open');
+         });
+
+         //メニュー名以外の部分をクリックで閉じる
+         $('#js__nav').on('click', function () {
+             $body.removeClass('open');
+         });
+     });
+    </script>
+
+
+
+
+
+  </body>
+</html>

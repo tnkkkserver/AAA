@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <style>
+      #maps{ height: 100%; }
+    </style>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  </head>
+  <body>
+    <header>
+
+
+
+    </header>
+
+
+
+
+
+
+   <div class="body">
+    <div id="maps"></div>
+     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCy-w7c-nxgTooOUVfrn0E820V1dV7m_0Q&callback=initMap" async></script>
+     <script>
+
+      function initMap() {
+
+
+
+
+
+
+      var mapPosition = {lat: 33.588752, lng: 130.413033};
+      var mapArea = document.getElementById('maps');
+
+      var mapOptions = {
+        center: mapPosition,
+        zoom: 15,
+        // ↓↓↓ 当記事ではstylesオプションを解説 ↓↓
+        styles: [
+                {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "landscape",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "poi",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+                {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+                     ],
+        // ↑↑↑ 当記事ではstylesオプションを解説 ↑↑↑
+        };
+
+
+
+    var currentInfoWindow = null;
+
+
+
+/////////🟢🟢🟢🟢🟢🟢マーカー最初🟢🟢🟢🟢🟢🟢🟢🟢🟢///////////////////////////////////////////////////////////////////
+
+
+      var map = new google.maps.Map(mapArea, mapOptions);
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+var markerOptions1 = {
+map: map,
+position:   {lat: 33.586752, lng: 130.396933},
+icon: "/アイコン青.png"
+};
+
+var contentString1 =
+
+ '<div class="content">' +
+    '<div  class="contentheader1">'+
+      '<div class="shopname1">HELLOW</div>' +
+    '</div>'+
+
+
+
+'<div class="cp_cssslider">'+
+  '<input type="radio" name="cp_switch" id="photo1" checked/>'+
+    '<label for="photo1"><img src="/アイコン青.png" ></label>'+
+    '<img src="/アイコン青.png">'+
+  '<input type="radio" name="cp_switch" id="photo2"/>'+
+    '<label for="photo2"><img src="/アイコン赤.png" ></label>'+
+    '<img src="/アイコン赤.png">'+
+  '<input type="radio" name="cp_switch" id="photo3"/>'+
+    '<label for="photo3"><img src="/アイコン緑.png" ></label>'+
+    '<img src="/アイコン緑.png">'+
+  '<input type="radio" name="cp_switch" id="photo4"/>'+
+    '<label for="photo4"><img src="/現在地.png"></label>'+
+    '<img src="/現在地.png">'+
+  '<input type="radio" name="cp_switch" id="photo5" checked/>'+
+    '<label for="photo5"><img src="/アイコン青.png" ></label>'+
+    '<img src="/アイコン青.png">'+
+
+
+'</div>'+
+
+
+
+    '<div class="sentence">' +
+      '<p>こんにちはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんに</p>'+
+    '</div>'+
+
+
+
+
+
+
+
+
+       '<div class="form">'+
+　　　　  '<p><span class="mgr1">予約</span> <a href="http://192.168.1.198:3000/shop1">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr2">HP</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　  　'<p><span class="mgr2">TEL</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr1">住所</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+      '</div>'+
+
+ '</div>';
+    var infowindow1 = new google.maps.InfoWindow({
+
+   content: contentString1
+ });
+
+var marker1 = new google.maps.Marker(markerOptions1);
+
+marker1.addListener("click", function() {
+if (currentInfoWindow) {
+currentInfoWindow.close();
+}
+  infowindow1.open(map, marker1);
+  currentInfoWindow = infowindow1;
+});
+///////////////////////////////////////////////////////////////////////////
+ var markerOptions2 = {
+   map: map,
+   position:  {lat: 33.584652, lng: 130.396933},
+   icon: "/アイコンピンク.png"
+ };
+
+ var contentString2 =
+ '<div class="content">' +
+    '<div  class="contentheader1">'+
+      '<div class="shopname1">HELLOW</div>' +
+    '</div>'+
+
+
+
+'<div class="cp_cssslider">'+
+  '<input type="radio" name="cp_switch" id="photo1" checked/>'+
+    '<label for="photo1"><img src="/アイコン青.png" ></label>'+
+    '<img src="/アイコン青.png">'+
+  '<input type="radio" name="cp_switch" id="photo2"/>'+
+    '<label for="photo2"><img src="/アイコン赤.png" ></label>'+
+    '<img src="/アイコン赤.png">'+
+  '<input type="radio" name="cp_switch" id="photo3"/>'+
+    '<label for="photo3"><img src="/アイコン緑.png" ></label>'+
+    '<img src="/アイコン緑.png">'+
+  '<input type="radio" name="cp_switch" id="photo4"/>'+
+    '<label for="photo4"><img src="/現在地.png"></label>'+
+    '<img src="/現在地.png">'+
+    '<input type="radio" name="cp_switch" id="photo5" checked/>'+
+      '<label for="photo5"><img src="/アイコン青.png" ></label>'+
+      '<img src="/アイコン青.png">'+
+
+'</div>'+
+
+
+
+'<div class="sentence">' +
+  '<p>こんにちはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんに</p>'+
+  '</div>'+
+
+
+
+       '<div class="form">'+
+　　　　  '<p><span class="mgr1">予約</span> <a href="http://192.168.1.198:3000/shop2">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr2">HP</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　  　'<p><span class="mgr2">TEL</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr1">住所</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+      '</div>'+
+
+
+ '</div>';
+       var infowindow2 = new google.maps.InfoWindow({
+      content: contentString2
+    });
+
+ var marker2 = new google.maps.Marker(markerOptions2);
+
+ marker2.addListener("click", function() {
+  if (currentInfoWindow) {
+ currentInfoWindow.close();
+ }
+     infowindow2.open(map, marker2);
+     currentInfoWindow = infowindow2;
+   });
+
+
+///////////////////////////////////////////////////////////////////////////
+var markerOptions3 = {
+map: map,
+position:   {lat: 33.584652, lng: 130.40000},
+icon: "/アイコンピンク.png"
+};
+
+var contentString3 =
+'<div class="content">' +
+   '<div  class="contentheader1">'+
+     '<div class="shopname1">HELLOW</div>' +
+   '</div>'+
+
+
+
+'<div class="cp_cssslider">'+
+ '<input type="radio" name="cp_switch" id="photo1" checked/>'+
+   '<label for="photo1"><img src="/アイコン青.png" ></label>'+
+   '<img src="/アイコン青.png">'+
+ '<input type="radio" name="cp_switch" id="photo2"/>'+
+   '<label for="photo2"><img src="/アイコン赤.png" ></label>'+
+   '<img src="/アイコン赤.png">'+
+ '<input type="radio" name="cp_switch" id="photo3"/>'+
+   '<label for="photo3"><img src="/アイコン緑.png" ></label>'+
+   '<img src="/アイコン緑.png">'+
+ '<input type="radio" name="cp_switch" id="photo4"/>'+
+   '<label for="photo4"><img src="/現在地.png"></label>'+
+   '<img src="/現在地.png">'+
+   '<input type="radio" name="cp_switch" id="photo5" checked/>'+
+     '<label for="photo5"><img src="/アイコン青.png" ></label>'+
+     '<img src="/アイコン青.png">'+
+
+'</div>'+
+
+
+
+'<div class="sentence">' +
+  '<p>こんにちはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんに</p>'+
+'</div>'+
+
+
+      '<div class="form">'+
+　　　　  '<p><span class="mgr1">予約</span> <a href="http://192.168.1.198:3000/shop3">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr2">HP</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　  　'<p><span class="mgr2">TEL</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr1">住所</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+
+     '</div>'+
+
+
+'</div>';
+    var infowindow3 = new google.maps.InfoWindow({
+   content: contentString3
+ });
+
+var marker3 = new google.maps.Marker(markerOptions3);
+
+marker3.addListener("click", function() {
+if (currentInfoWindow) {
+currentInfoWindow.close();
+}
+  infowindow3.open(map, marker3);
+  currentInfoWindow = infowindow3;
+});
+
+
+
+
+ ///////////////////////////////////////////////////////////////////////////
+ var markerOptions4 = {
+   map: map,
+   position:   {lat: 33.586652, lng: 130.40000},
+   icon: "/アイコンピンク.png"
+ };
+
+ var contentString4 =
+ '<div class="content">' +
+    '<div  class="contentheader1">'+
+      '<div class="shopname1">HELLOW</div>' +
+    '</div>'+
+
+
+
+'<div class="cp_cssslider">'+
+  '<input type="radio" name="cp_switch" id="photo1" checked/>'+
+    '<label for="photo1"><img src="/アイコン青.png" ></label>'+
+    '<img src="/アイコン青.png">'+
+  '<input type="radio" name="cp_switch" id="photo2"/>'+
+    '<label for="photo2"><img src="/アイコン赤.png" ></label>'+
+    '<img src="/アイコン赤.png">'+
+  '<input type="radio" name="cp_switch" id="photo3"/>'+
+    '<label for="photo3"><img src="/アイコン緑.png" ></label>'+
+    '<img src="/アイコン緑.png">'+
+  '<input type="radio" name="cp_switch" id="photo4"/>'+
+    '<label for="photo4"><img src="/現在地.png"></label>'+
+    '<img src="/現在地.png">'+
+    '<input type="radio" name="cp_switch" id="photo5" checked/>'+
+      '<label for="photo5"><img src="/アイコン青.png" ></label>'+
+      '<img src="/アイコン青.png">'+
+
+'</div>'+
+
+
+
+'<div class="sentence">' +
+  '<p>こんにちはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんにはこんにちはこんにちはこんに</p>'+
+'</div>'+
+
+
+       '<div class="form">'+
+　　　　  '<p><span class="mgr1">予約</span> <a href="http://192.168.1.198:3000/shop4">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr2">HP</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　  　'<p><span class="mgr2">TEL</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+　　　　  '<p><span class="mgr1">住所</span> <a href="https://qiita.com/oyaoyaoya/items/327beff5112df864cc3f">っっっっ</a></p>'+
+      '</div>'+
+
+
+ '</div>';
+       var infowindow4 = new google.maps.InfoWindow({
+      content: contentString4
+    });
+
+ var marker4 = new google.maps.Marker(markerOptions4);
+
+ marker4.addListener("click", function() {
+  if (currentInfoWindow) {
+ currentInfoWindow.close();
+ }
+     infowindow4.open(map, marker4);
+     currentInfoWindow = infowindow4;
+   });
+
+
+
+//////🟡🟡🟡🟡🟡🟡🟡🟡🟡マーカー最後🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡/////////////////
+    }
+     </script>
+   </div>
+
+
+   <a class="現在地" href="http://localhost:3000/home/top"><img src="/現在地00.png"　width="35px" height="35px"></a>
+
+
+
+
+
+
+
+   <!-- 🟢🟢🟢🟢🟢🟢モーダルウィンドウ🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢　-->
+
+    <!-- メインコンテンツ-->
+    <div class="wrapper">
+        <!-- ここはコンテンツ -->
+    </div>
+
+    <!-- 開閉用ボタン -->
+    <div class="menu-btn" id="js__btn">
+        <span data-txt-menu="MENU" data-txt-close="CLOSE"></span>
+    </div>
+
+    <!-- モーダルメニュー -->
+    <nav class="menu" id="js__nav">
+        <ul>
+          <li><a href="http://localhost:3000/top">MAP</a></li>
+          <li><a href="http://localhost:3000/ranking">総合ランキング</a></li>
+          <li><a href="http://localhost:3000/ranking2">値段ランキング</a></li>
+          <li><a href="http://192.168.1.198:3000/top">MAP</a></li>
+          <li><a href="http://192.168.1.198:3000/ranking">総合ランキンング</a></li>
+            <li><a href="http://192.168.1.198:3000/ranking2">値段ランキング</a></li>
+          <li><a href="http://192.168.100.101:3000/top">MAP</a></li>
+          <li><a href="http://192.168.100.101:3000/ranking">総合ランキンング</a></li>
+          <li><a href="http://192.168.100.101:3000/ranking2">値段ランキンング</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+  <!-- 🟡🟡🟡🟡🟡🟡🟡🟡モーダルウィンドウ🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡🟡　-->
+
+
+
+
+  <!--jQuery本体-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!--自分で作るjQueryプログラム-->
+  <script>
+    $(function () {
+        var $body = $('body');
+
+        //開閉用ボタンをクリックでクラスの切替え
+        $('#js__btn').on('click', function () {
+            $body.toggleClass('open');
+        });
+
+        //メニュー名以外の部分をクリックで閉じる
+        $('#js__nav').on('click', function () {
+            $body.removeClass('open');
+        });
+    });
+  </script>
+
+
+
+
+
+  <!--jQuery本体-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!--自分で作るjQueryプログラム-->
+  <script>
+    $(function(){
+  $('.js-modal-open').on('click',function(){
+      $('.js-modal').fadeIn();
+      return false;
+  });
+  $('.js-modal-close').on('click',function(){
+      $('.js-modal').fadeOut();
+      return false;
+  });
+});
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script>
+    $( document ).ready(function( $ ) {
+      $( '#example1' ).sliderPro({
+        width: 780,
+        height: 320,
+      });
+    });
+  </script>
+
+
+
+
+
+  </body>
+</html>
